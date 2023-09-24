@@ -1,0 +1,14 @@
+@import './normilize.css';
+@import './container.css';
+@import './header.css';
+@import './icon.css';
+@import './footer.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+
+:root {
+  /* Colors */
+  --yellow: #ffd700;
+  --blue: #4095cd;
+  --white: #fff;
+}
