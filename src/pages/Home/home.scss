@@ -1,17 +1,30 @@
 @import '../../styles/utils/_mixins';
+@import '../../styles/utils/_vars';
 
-.home {
+
+.home-page {
+  height: calc(100vh - $headerHeight - $footerHeight);
   padding-top: 190px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 35px;
+  background-color: $background;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    & p {
+      text-align: start;
+      line-height: 175%;
+    }
+  }
 
   @include onTablet {
     display: none;
   }
 
   &__title {
+    text-align: center;
     font-size: 25px;
     font-weight: 900;
     text-transform: uppercase;

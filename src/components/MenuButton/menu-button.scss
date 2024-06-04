@@ -1,3 +1,5 @@
+@import '../../styles/utils/_vars';
+
 .menu__button {
   width: 35px;
 }
@@ -12,7 +14,7 @@
 
 .button-box__element {
   height: 2px;
-  background-color: var(--green);
+  background-color: $green;
 }
 
 

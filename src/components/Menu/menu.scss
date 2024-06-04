@@ -1,9 +1,10 @@
 @import '../../styles/utils/_mixins.scss';
+@import '../../styles/utils/_vars';
 
 .menu-page {
   padding-top: 85px;
-  height: 100vh;
-  background-color: var(--background);
+  height: calc(100vh - $headerHeight - $footerHeight);
+  background-color: $background;
   position: fixed;
   top: 60px;
   z-index: 15;
@@ -29,7 +30,7 @@
 }
 
 .nav__link {
-  color: var(--lightText);
+  color: $lightText;
   font-size: 15px;
 }
 
@@ -38,6 +39,6 @@
   align-items: center;
   padding: 18px 50px;
   width: max-content;
-  border: 1px solid var(--green);
+  border: 1px solid $green;
   border-radius: 5px;
 }

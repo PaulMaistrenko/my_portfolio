@@ -1,11 +1,11 @@
 @import '../../styles/utils/_vars';
 
 .dark-text {
-  color: var(--darkText);
+  color: $darkText;
 }
 
 .green-text {
-  color: var(--green);
+  color:$green;
 }
 
 .icon {

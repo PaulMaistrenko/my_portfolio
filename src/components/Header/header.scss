@@ -4,13 +4,13 @@
 .header {
   position: sticky;
   top: 0;
-  background-color: var(--background);
+  background-color: $background;
   z-index: 15;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
-  box-shadow: 0 1px 6px 0 var(--green);
+  height: $headerHeight;
+  box-shadow: 0 1px 6px 0 $green;
 
   @include onTablet {
     height: 100px;
