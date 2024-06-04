@@ -1,0 +1,21 @@
+.cross__button {
+  position: relative;
+  display: flex;
+  width: 25px;
+}
+
+.cross-element {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  background-color: var(--green);
+}
+
+.cross-element--1 {
+  transform: rotate(45deg);
+}
+
+.cross-element--2 {
+  transform: rotate(-45deg);
+}

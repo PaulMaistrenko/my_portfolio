@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import './styles/utils/_mixins';
+@import './styles/utils/normalize';
+@import './styles/utils/reset';
+@import './styles/utils/vars';
+
+@import './styles/blocks/page';
+@import './styles/blocks/container';
+
+.desktop__content {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+}

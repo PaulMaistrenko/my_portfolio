@@ -1,0 +1,37 @@
+@import '../../styles/utils/_vars';
+@import '../../styles/utils/_mixins';
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  box-shadow: 0 1px 6px 0 var(--green);
+
+  @include onTablet {
+    height: 100px;
+  }
+
+  &__desktop {
+    display: none;
+  
+    @include onTablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 230px;
+    }
+  }
+
+  &__mobile {
+    display: flex;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+}

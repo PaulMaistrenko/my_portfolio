@@ -1,0 +1,23 @@
+@import '../../styles/utils/_vars';
+
+.dark-text {
+  color: var(--darkText);
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.icon {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mobile__content {
+  display: block;
+
+  @include onTablet {
+    display: none;
+  }
+}
