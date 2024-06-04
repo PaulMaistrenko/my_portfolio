@@ -1,0 +1,27 @@
+@import '../../styles/utils/_vars';
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: $footerHeight;
+  background-color: $background;
+}
+
+.footer__content {
+  display: flex;
+  gap: 30px;
+}
+
+.footer__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.git-hub {
+  background-image: url('../../assets/img/icons/git-hub_icon--light.svg');
+}
+
+.linked-in {
+  background-image: url('../../assets/img/icons/linked-in_icon--light.svg');
+}
