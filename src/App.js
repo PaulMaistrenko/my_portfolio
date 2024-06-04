@@ -6,6 +6,7 @@ import { Menu } from "./components/Menu";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Contacts } from "./components/Contacts";
+import './App.scss';
 
 export const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
