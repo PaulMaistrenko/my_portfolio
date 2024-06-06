@@ -1,3 +1,4 @@
+import { projects } from '../../variables/projects';
 import { ProjectsItem } from '../ProjectsItem';
 import './projects.scss';
 
@@ -7,21 +8,11 @@ export const Projects = () => {
       <div className="container">
         <div className="projects__content">
           <ul className="projects__list">
-            <li className="projects__item">
-              <ProjectsItem />
-            </li>
-            <li className="projects__item">
-              <ProjectsItem />
-            </li>
-            <li className="projects__item">
-              <ProjectsItem />
-            </li>
-            <li className="projects__item">
-              <ProjectsItem />
-            </li>
-            <li className="projects__item">
-              <ProjectsItem />
-            </li>
+            { projects.map(project => (
+              <li className="projects__item" key={project.title}>
+                <ProjectsItem project={project} />
+              </li>
+            ))}
           </ul>
         </div>
       </div>

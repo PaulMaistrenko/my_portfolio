@@ -2,32 +2,38 @@ import { Link } from 'react-router-dom';
 import './project-item.scss';
 import  DIA_landing from '../../assets/img/blocks/projects/DIA_landing.png';
 
-export const ProjectsItem = () => {
+export const ProjectsItem = ({ project }) => {
+  const {
+    description,
+    title,
+    demo,
+    code,
+    technologies,
+  } = project;
+
   return (
     <div className="project-card">
       <div className="project__info">
         <div className="project__top">
-          <h3 className="project__title">Strategic Agency</h3>
+          <h3 className="project__title">{title}</h3>
           <div className="links">
           <Link
-            to="https://paulmaistrenko.github.io/layout_dia/"
+            to={demo}
             className="project__link demo__link icon"
             target='_blank'
           />
           <Link
-            to="https://github.com/PaulMaistrenko/layout_dia"
+            to={code}
             className="project__link code__link icon"
             target='_blank'
           />
         </div>
         </div>
-          <p className="project__description">The pixel-perfect responsive landing page.</p>
+          <p className="project__description">{description}</p>
           <ul className="project__technologies">
-            <li className="technologies__item">JavaScript</li>
-            <li className="technologies__item">React</li>
-            <li className="technologies__item">HTML</li>
-            <li className="technologies__item">SCSS</li>
-            <li className="technologies__item">FIGMA</li>
+            { technologies.map(item => (
+              <li className="technologies__item" key={item}>{item}</li>
+            ))}
           </ul>
         </div>
         <img

@@ -1,0 +1,51 @@
+export const projects = [
+  {
+    "description": "The pixel-perfect responsive landing page.",
+    "title": "Strategic Agency",
+    "demo": "https://paulmaistrenko.github.io/layout_dia/",
+    "code": "https://github.com/PaulMaistrenko/layout_dia",
+    "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
+  },
+  {
+    "description": "The pixel-perfect responsive landing page.",
+    "title": "The Metropolitan Museum of Art",
+    "demo": "https://paulmaistrenko.github.io/layout_landing-page/",
+    "code": "https://github.com/PaulMaistrenko/layout_landing-page",
+    "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
+  },
+  {
+    "description": "The pixel-perfect responsive landing page.",
+    "title": "National Art Museum Of Ukraine",
+    "demo": "https://paulmaistrenko.github.io/Museum/",
+    "code": "https://github.com/PaulMaistrenko/Museum",
+    "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
+  },
+  {
+    "description": "The pixel-perfect responsive landing page.",
+    "title": "Miami condo kings",
+    "demo": "https://paulmaistrenko.github.io/layout_miami/",
+    "code": "https://github.com/PaulMaistrenko/layout_miami/tree/develop",
+    "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
+  },
+  {
+    "description": "Gadgets catalog for 1440px - screen resolution.",
+    "title": "Online-store catalog",
+    "demo": "https://paulmaistrenko.github.io/react_phone-catalog/",
+    "code": "https://github.com/PaulMaistrenko/react_phone-catalog",
+    "technologies": ["JavaScript", "React", "HTML", "SCSS", "FIGMA", "BEM"],
+  },
+  {
+    "description": "An interactive to-do created using functional components, hooks, fetch, routing, and local storage.",
+    "title": "Task manager",
+    "demo": "https://paulmaistrenko.github.io/react_todo-app/",
+    "code": "https://github.com/PaulMaistrenko/react_todo-app",
+    "technologies": ["JavaScript", "React", "HTML", "SCSS"],
+  },
+  {
+    "description": "The game is written in pure Java Script.",
+    "title": "Strategy squared",
+    "demo": "https://paulmaistrenko.github.io/js_2048_game/",
+    "code": "https://github.com/PaulMaistrenko/js_2048_game",
+    "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA"],
+  },
+]
