@@ -25,7 +25,7 @@
   }
 }
 
-.about-text {
+.about__text {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -49,7 +49,7 @@
 }
 
 .skills {
-  margin: 20px 10px;
+  margin-block: 20px;
   padding-left: 20px;
   border-left: 1px solid $green;
 }

@@ -8,7 +8,7 @@ export const About = () => {
         <article className="about__content">
           <p className="accented-text">Hi, my name is</p>
           <p className="title-text">Pavlo Maistrenko</p>
-          <p className="about-text">
+          <p className="about__text">
             I have spent a significant portion of my career collaborating
             with foreign companies in the field of trade. Confronted with
             new technological solutions every day, I became increasingly
@@ -18,7 +18,7 @@ export const About = () => {
             of our daily lives side by side with my love for exact sciences, in 2021,
             I decided to embark on the journey of learning web development.
           </p>
-          <p className="about-text">
+          <p className="about__text">
             The decisive factor in choosing these technologies was the broad
             range of possibilities and prospects that open up for a developer
             when utilizing technologies such as:
@@ -26,7 +26,7 @@ export const About = () => {
           <div className="skills">
             <span className="accented-text">JavaScript <br /> HTML<br /> CSS<br /> React<br /> TypeScript<br /></span>
           </div>
-          <p className="about-text">
+          <p className="about__text">
             Furthermore, the ability to immediately witness the results of my work
             and the opportunity to apply a certain level of creativity played a
             pivotal role. This is how I began my path as a Frontend developer.
