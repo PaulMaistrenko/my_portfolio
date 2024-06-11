@@ -8,7 +8,7 @@ export const Contacts = () => {
         <div className="contacts__content">
           <ul className="contacts__list">
             <li className="contacts__item">
-              Phone
+              Phone..
               <Link
                 to="tel:+4916096294939"
                 className="contacts__link"
@@ -17,7 +17,7 @@ export const Contacts = () => {
               </Link>
             </li>
             <li className="contacts__item">
-              Telegram
+              Telegram..
               <Link
                 to="https://t.me/Paul_Master"
                 className="contacts__link"
@@ -28,7 +28,7 @@ export const Contacts = () => {
               </Link>
             </li>
             <li className="contacts__item">
-              Email
+              Email..
               <Link
                 to="mailto:maystrenko.p@gmail.com"
                 className="contacts__link"
@@ -39,7 +39,7 @@ export const Contacts = () => {
               </Link>
             </li>
             <li className="contacts__item">
-              Location
+              Location..
               <Link
                 to="https://maps.app.goo.gl/Utq9XvnWovzEfu1K8"
                 className="contacts__link"
