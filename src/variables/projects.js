@@ -1,17 +1,19 @@
 export const projects = [
   {
     "description": "The pixel-perfect responsive landing page.",
-    "title": "Strategic Agency",
-    "demo": "https://paulmaistrenko.github.io/layout_dia/",
-    "code": "https://github.com/PaulMaistrenko/layout_dia",
-    "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
-  },
-  {
-    "description": "The pixel-perfect responsive landing page.",
     "title": "The Metropolitan Museum of Art",
     "demo": "https://paulmaistrenko.github.io/layout_landing-page/",
     "code": "https://github.com/PaulMaistrenko/layout_landing-page",
     "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
+    "image": "/projects/MET_landing.png",
+  },
+  {
+    "description": "The pixel-perfect responsive landing page.",
+    "title": "Strategic Agency",
+    "demo": "https://paulmaistrenko.github.io/layout_dia/",
+    "code": "https://github.com/PaulMaistrenko/layout_dia",
+    "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
+    "image": "/projects/DIA_landing.png",
   },
   {
     "description": "The pixel-perfect responsive landing page.",
@@ -19,6 +21,7 @@ export const projects = [
     "demo": "https://paulmaistrenko.github.io/Museum/",
     "code": "https://github.com/PaulMaistrenko/Museum",
     "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
+    "image": "/projects/Museum_landing.png",
   },
   {
     "description": "The pixel-perfect responsive landing page.",
@@ -26,6 +29,7 @@ export const projects = [
     "demo": "https://paulmaistrenko.github.io/layout_miami/",
     "code": "https://github.com/PaulMaistrenko/layout_miami/tree/develop",
     "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA", "BEM"],
+    "image": "/projects/Miami_landing.png",
   },
   {
     "description": "Gadgets catalog for 1440px - screen resolution.",
@@ -33,6 +37,7 @@ export const projects = [
     "demo": "https://paulmaistrenko.github.io/react_phone-catalog/",
     "code": "https://github.com/PaulMaistrenko/react_phone-catalog",
     "technologies": ["JavaScript", "React", "HTML", "SCSS", "FIGMA", "BEM"],
+    "image": "/projects/gadgets_catalog.bmp",
   },
   {
     "description": "An interactive to-do created using functional components, hooks, fetch, routing, and local storage.",
@@ -40,6 +45,7 @@ export const projects = [
     "demo": "https://paulmaistrenko.github.io/react_todo-app/",
     "code": "https://github.com/PaulMaistrenko/react_todo-app",
     "technologies": ["JavaScript", "React", "HTML", "SCSS"],
+    "image": "/projects/todo.png",
   },
   {
     "description": "The game is written in pure Java Script.",
@@ -47,5 +53,6 @@ export const projects = [
     "demo": "https://paulmaistrenko.github.io/js_2048_game/",
     "code": "https://github.com/PaulMaistrenko/js_2048_game",
     "technologies": ["JavaScript", "HTML", "SCSS", "FIGMA"],
+    "image": "/projects/2048_game_.png",
   },
 ]

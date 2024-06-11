@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './project-item.scss';
-import  DIA_landing from '../../assets/img/blocks/projects/DIA_landing.png';
+//import  DIA_landing from '../../assets/img/blocks/projects/DIA_landing.png';
 
 export const ProjectsItem = ({ project }) => {
   const {
@@ -9,6 +9,7 @@ export const ProjectsItem = ({ project }) => {
     demo,
     code,
     technologies,
+    image,
   } = project;
 
   return (
@@ -37,8 +38,8 @@ export const ProjectsItem = ({ project }) => {
           </ul>
         </div>
         <img
-          src={DIA_landing}
-          alt="Strategic Agency"
+          src={`${process.env.PUBLIC_URL}${image}`}
+          alt={title}
           className="card__img"
         />
     </div>
