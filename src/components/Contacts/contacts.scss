@@ -1,0 +1,29 @@
+@import '../../styles/utils/_vars';
+
+.contacts__content {
+  padding-block: 70px;
+}
+
+.contacts__list {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: $green;
+}
+
+.contacts__link {
+  color: $lightText;
+}
+
+.map {
+  width: 100%;
+  box-shadow: 1px 0 7px 2px $green;
+  border-radius: 4px;
+}
