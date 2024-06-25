@@ -10,6 +10,13 @@
   }
 }
 
+.about__content {
+  @include onDesktop {
+    width: 75%;
+    margin-inline: auto;
+  }
+}
+
 .about__photo {
   margin: 0 auto 50px;
   background-image: url('../../assets/img/blocks/about/photo.png');
@@ -22,9 +29,11 @@
   box-shadow: 1px 0 7px 2px $green;
 
   @include onTablet {
-    margin: 0 0 70px;
+    margin-inline: auto;
+    margin-bottom: 70px;
     height: 280px;
     width: 280px;
+    border-radius: 4px;
   }
 }
 

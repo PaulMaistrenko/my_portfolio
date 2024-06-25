@@ -4,7 +4,7 @@ import './projects.scss';
 
 export const Projects = () => {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <div className="container">
         <div className="projects__content">
           <ul className="projects__list">

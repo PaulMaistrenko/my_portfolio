@@ -15,6 +15,14 @@
 
   @include onTablet {
     padding: 25px;
+    width: 75%;
+    margin-inline: auto;
+  }
+
+  @include onDesktop {
+    padding: 25px;
+    width: 50%;
+    margin-inline: auto;
   }
 }
 
@@ -80,4 +88,9 @@
 
 .code__link {
   background-image: url('../../assets/img/icons/git-hub_icon--green.svg');
+}
+
+.card__img {
+  border-radius: 4px;
+  width: 100%;
 }
