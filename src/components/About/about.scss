@@ -5,7 +5,8 @@
   padding-block: 70px;
 
   @include onTablet {
-    padding-top: 90px;
+    padding-top: 70px;
+    padding-bottom: 0;
   }
 }
 
@@ -13,7 +14,8 @@
   margin: 0 auto 50px;
   background-image: url('../../assets/img/blocks/about/photo.png');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -47,6 +49,10 @@
   font-size: 48px;
   line-height: 120%;
   font-weight: 900;
+
+  @include onTablet {
+    margin-bottom: 45px;
+  }
 }
 
 .skills {

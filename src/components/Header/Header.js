@@ -19,7 +19,7 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
           <ul className="nav__list">
             <li className="nav__item">
               <NavLink
-                className="nav__link active"
+                className="nav__link"
                 onClick={() => scrollToTop()}
               >
                 about.

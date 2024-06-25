@@ -21,7 +21,6 @@
   
     @include onTablet {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       gap: 230px;
     }
@@ -34,4 +33,9 @@
       display: none;
     }
   }
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
 }

@@ -1,5 +1,12 @@
+@import '../../styles/utils/_mixins';
+
 .projects__content {
   padding-block: 70px;
+
+  @include onTablet {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
 }
 
 .projects__list {

@@ -18,25 +18,25 @@ export const ProjectsItem = ({ project }) => {
         <div className="project__top">
           <h3 className="project__title">{title}</h3>
           <div className="links">
-          <Link
-            to={demo}
-            className="project__link demo__link icon"
-            target='_blank'
-          />
-          <Link
-            to={code}
-            className="project__link code__link icon"
-            target='_blank'
-          />
+            <Link
+              to={demo}
+              className="project__link demo__link icon"
+              target='_blank'
+            />
+            <Link
+              to={code}
+              className="project__link code__link icon"
+              target='_blank'
+            />
+          </div>
         </div>
-        </div>
-          <p className="project__description">{description}</p>
-          <ul className="project__technologies">
-            { technologies.map(item => (
-              <li className="technologies__item" key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        <p className="project__description">{description}</p>
+        <ul className="project__technologies">
+          { technologies.map(item => (
+            <li className="technologies__item" key={item}>{item}</li>
+          ))}
+        </ul>
+      </div>
         <img
           src={`${process.env.PUBLIC_URL}${image}`}
           alt={title}
