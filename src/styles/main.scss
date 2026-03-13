@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@import './base/reset';
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/_grid';
+@import '../pages/Home/Home';
+@import '../pages/About/About';
+@import '../pages/Projects/Projects';
+@import '../pages/Contacts/Contacts';
+@import '../components/ScrollReveal/ScrollReveal';
+@import '../components/SpotlightOverlay/SpotlightOverlay';
+@import '../components/Header/Header';
+@import '../components/StartPage/StartPage';
+@import '../components/Footer/Footer';
+@import '../components/FeaturesItem/FeaturesItem';
+@import '../components/FooterMobile/FooterMobile';
+@import '../components/SocialLinks/SocialLinks';
+@import '../components/UI/BackLink/BackLink';
+@import '../components//CreaterInfo/CreaterInfo';
+@import '../components/Notification/Notification';
+@import '../components/ProjectsPageItem/ProjectsPageItem';
+@import '../components/UI/LanguageSelector/LanguageSelector';
+@import '../components/UI/DownloadCvButton/DownloadCvButton';
+@import '../components/UI/MainLogo/MainLogo';
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: $color-secondary;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-inline: 20px;
+
+  @include onTablet {
+    padding-inline: 80px;
+  }
+}
+
+.page {
+  padding-block: 25px;
+
+  @include onTablet {
+    background: transparent;
+  }
+
+  @include onDesktop {
+    padding-top: 60px;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 5px;
+    opacity: 0.7;
+
+    @include onTablet {
+      font-size: 32px;
+    }
+
+    @include onDesktop {
+      font-size: 40px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 5px;
+      width: 100%;
+      height: 2px;
+      background-color: $color-secondary;
+    }
+  }
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.on-tablet--hidden {
+  @include onTablet {
+    display: none;
+  }
+}
+
+.on-desktop--hidden {
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.position--static {
+  position: static;
+}
+
+.text-primary {
+  color: $text-primary;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}
+
+.text-accent {
+  color: $text-accent;
+}
+
+.hidden {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  box-shadow: 0 0 0px 1000px transparent inset;
+
+  -webkit-text-fill-color: $text-secondary;
+  font-family: inherit;
+  font-size: inherit;
+
+  transition: background-color 5000s ease-in-out 0s;
+}
