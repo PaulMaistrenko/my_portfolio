@@ -1,0 +1,45 @@
+.social__links {
+  padding-block: 25px;
+
+  @include onTablet {
+    position: static;
+  }
+}
+
+.social__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  @include onTablet {
+    justify-content: flex-start;
+  }
+}
+
+.social__nav-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.5s ease;
+}
+
+.linkedin {
+  background-image: url("../../assets/icons/linked-in_icon--green.svg");
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-image: url("../../assets/icons/linked-in_icon--light.svg");
+    transform: scale(115%);
+  }
+}
+
+.git-hub {
+  background-image: url("../../assets/icons/git-hub_icon--green.svg");
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-image: url("../../assets/icons/git-hub_icon--light.svg");
+    transform: scale(115%);
+  }
+}

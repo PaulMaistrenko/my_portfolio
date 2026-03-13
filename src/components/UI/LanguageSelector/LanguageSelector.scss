@@ -1,0 +1,45 @@
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.5s;
+
+  @include onTablet {
+    position: relative;
+    gap: 10px;
+  }
+}
+
+.language-selector__dropdown {
+  display: flex;
+  align-items: center;
+  top: 36px;
+  gap: 20px;
+
+  @include onTablet {
+    position: absolute;
+    top: 44px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.language-selector__item {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.en {
+  background-image: url('../../../assets/icons/britain-flag.png');
+}
+
+.de {
+  background-image: url('../../../assets/icons/german-flag.png');
+}
+
+.uk {
+  background-image: url('../../../assets/icons/ukraine-flag.png');
+}

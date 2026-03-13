@@ -1,0 +1,45 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  @include onTablet {
+    height: max-content;
+  }
+}
+
+.home-page__top {
+  position: relative;
+  bottom: 35px;
+  text-align: center;
+}
+
+.home-page__top .start-page__title {
+  margin-bottom: 15px;
+}
+
+.mobile__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+.mobile__nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.mobile__nav-link {
+  color: $text-accent;
+  font-size: 18px;
+  font-weight: 400;
+}

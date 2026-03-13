@@ -1,0 +1,6 @@
+@import './styles/main';
+@import './styles/utilities/_mixins';
+
+.content {
+  background-color: $background-color;
+}

@@ -1,0 +1,47 @@
+.start-page {
+  text-align: center;
+}
+
+.start-page__content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+
+  & p {
+    line-height: 175%;
+  }
+}
+
+.start-page__title {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.start-page__title span {
+  color: $text-accent;
+}
+
+.start-page__content p span {
+  margin-left: 4px;
+  opacity: 0.1;
+  animation-name: glowing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.start-page__content p span {
+  animation-delay: 0.1s;
+}
+
+@keyframes glowing {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
