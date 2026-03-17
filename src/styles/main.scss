@@ -5,10 +5,19 @@
 @import './utilities/variables';
 @import './utilities/mixins';
 @import './utilities/_grid';
-@import '../pages/Home/Home';
 @import '../pages/StartPage/StartPage';
+@import '../pages/Home/Home';
+@import '../pages/About/About';
+@import '../pages/Projects/Projects';
+@import '../pages/Contacts/Contacts';
+@import '../components/UI/BackLink/BackLink';
+@import '../components/UI/DownloadCvButton/DownloadCvButton';
 @import '../components/UI/LanguageSelector/LanguageSelector';
+@import '../components/FeaturesItem/FeaturesItem';
 @import '../components/SocialLinks/SocialLinks';
+@import '../components/FooterMobile/FooterMobile';
+@import '../components/CreaterInfo/CreaterInfo';
+@import '../components/ProjectsPageItem/ProjectsPageItem';
 
 body {
   font-family: 'Roboto Mono', monospace;

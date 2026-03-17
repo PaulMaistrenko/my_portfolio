@@ -1,0 +1,145 @@
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useRef } from 'react';
+import classNames from 'classnames';
+import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
+
+export const ProjectsPageItem = ({ projectsItem }) => {
+  const { type, description, technologies, projects, backImage } = projectsItem;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [startX, setStartX] = useState(null);
+  const [isFlipped, setIsFlipped] = useState(false);
+  const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' });
+  const { t } = useTranslation();
+  const cardRef = useRef(null);
+
+  const handleNextSlide = () => {
+    if (currentIndex === projects.length - 1) {
+      return;
+    }
+    setCurrentIndex((prewIndex) => (prewIndex + 1) % projects.length);
+  };
+
+  const handlePrevSlide = () => {
+    if (currentIndex === 0) {
+      return;
+    }
+    setCurrentIndex(
+      (prewIndex) => (prewIndex - 1 + projects.length) % projects.length,
+    );
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
+  const handleTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (startX === null) return;
+
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX;
+
+    if (diffX > 50) {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+      setStartX(null);
+    } else if (diffX < -50) {
+      setCurrentIndex(
+        (prevIndex) => (prevIndex - 1 + projects.length) % projects.length,
+      );
+      setStartX(null);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setStartX(null);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!cardRef.current) return;
+
+      if (!cardRef.current.contains(event.target)) {
+        setIsFlipped(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div
+      ref={cardRef}
+      className={classNames('projects-card__inner', {
+        'projects-card__inner--flipped': isFlipped,
+      })}
+    >
+      <div
+        className={`projects-card-front projects-card-front--${backImage}`}
+        onClick={() => !isDesktop && setIsFlipped(true)}
+      >
+        <div className="projects-card-front__content">
+          <h3 className="projects-card-front__title text-accent">{t(type)}</h3>
+          <div className="projects-card-front__description text-primary">
+            {t(description)}
+          </div>
+          <ul className="technologies__list">
+            {technologies.map((technology) => (
+              <li key={technology} className="technologies__item text-primary">
+                {technology}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div
+        className="projects-card-back"
+        onClick={() => !isDesktop && setIsFlipped(false)}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        <div className="projects-card-back__top">
+          <h2 className="project-card__title">
+            {t(`${projects[currentIndex].title}`)}
+          </h2>
+          <div className="project-card__links">
+            <Link
+              to={projects[currentIndex].projectLink}
+              target="_blank"
+              className="project-card__link project-link"
+            />
+            <Link
+              to={projects[currentIndex].codeLink}
+              target="_blank"
+              className="project-card__link project-git-link"
+            />
+          </div>
+        </div>
+        <div className="projects-card-back__bottom">
+          <div className="projects-card-back__action">
+            {projects.length > 1 && (
+              <button
+                className={classNames('prev-button', {
+                  'prev-button--disable': currentIndex === 0,
+                })}
+                onClick={() => handlePrevSlide()}
+              />
+            )}
+            <div
+              className={`project__image ${projects[currentIndex].backImageLink}`}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

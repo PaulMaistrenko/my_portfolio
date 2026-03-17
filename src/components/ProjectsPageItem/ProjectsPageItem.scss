@@ -1,0 +1,378 @@
+.projects-card__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.projects-card__inner--flipped {
+  transform: rotateY(180deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .projects-page-item:hover .projects-card__inner {
+    transform: rotateY(180deg);
+  }
+}
+
+.projects-card-front,
+.projects-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.projects-card-back {
+  transform: rotateY(180deg);
+}
+
+.projects-card-front__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+
+  @include onTablet {
+    font-size: 16px;
+  }
+}
+
+.projects-card-front__description {
+  margin-bottom: 15px;
+  font-family: Roboto;
+  line-height: 135%;
+  font-size: 14px;
+
+  @include onTablet {
+    font-size: 16px;
+  }
+}
+
+.technologies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @include onTablet {
+    gap: 8px;
+  }
+}
+
+.technologies__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: $text-primary;
+  line-height: 120%;
+  font-size: 14px;
+  font-weight: 300;
+
+  @include onTablet {
+    gap: 8px;
+    font-size: 16px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url('../../assets/icons/arrow-accent-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.projects-card-front {
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.15;
+  }
+}
+
+.projects-card-front--kondo-kings {
+  &::after {
+    background-image: url('../../assets/images/projects/project-type-backgrounds/landing-pages.png');
+  }
+}
+
+.projects-card-front--tsk-manager__image {
+  &::after {
+    background-image: url('../../assets/images/projects/project-type-backgrounds/todo.png');
+  }
+}
+
+.projects-card-front--game__image {
+  &::after {
+    background-image: url('../../assets/images/projects/project-type-backgrounds/2048.png');
+  }
+}
+
+.projects-card-front--design-studio__image {
+  &::after {
+    background-image: url('../../assets/images/projects/project-type-backgrounds/design-studio.png');
+  }
+}
+
+.projects-card-front__content {
+  padding: 15px;
+}
+
+.projects-card-back {
+  padding-block: 20px;
+  padding-inline: 15px;
+}
+
+.projects-card-back__top {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card__title {
+  color: $color-accent;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+
+  @include onTablet {
+    font-size: 18px;
+  }
+}
+
+.project-card__links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @include onTablet {
+    gap: 20px;
+  }
+}
+
+.project-card__link {
+  width: 22px;
+  height: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include onTablet {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.project-link {
+  background-image: url('../../assets/icons/open-in-new-window.svg');
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-image: url('../../assets/icons/open-in-new-window-accent.svg');
+  }
+}
+
+.project-git-link {
+  background-image: url('../../assets/icons/git-hub_icon--light.svg');
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-image: url('../../assets/icons/git-hub_icon--green.svg');
+  }
+}
+
+.projects-card-back__action {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.projects-card-back__action button {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.prev-button {
+  background-image: url('../../assets/icons/slider-arrow-left-accent.svg');
+
+  &--disable {
+    background-image: url('../../assets/icons/slider-arrow-left-grey.svg');
+  }
+}
+
+.next-button {
+  background-image: url('../../assets/icons/slider-arrow-right-accent.svg');
+
+  &--disable {
+    background-image: url('../../assets/icons/slider-arrow-right-grey.svg');
+  }
+}
+
+.project__image {
+  display: block;
+  height: 185px;
+  width: 100%;
+  min-width: 218px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px -1px 10px 5px rgba(100, 255, 218, 0.25);
+
+  @media (min-width: 480px) {
+    width: 300px;
+  }
+
+  @media (min-width: 560px) {
+    width: 380px;
+  }
+
+  @media (min-width: 640px) {
+    width: 420px;
+  }
+
+  @include onDesktop {
+    width: 380px;
+  }
+}
+
+.kondo-kings {
+  background-image: url('../../assets/images/projects/320px/maimi-condo-kings.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/miami.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/miami.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/miami.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/miami.png');
+  }
+}
+
+.tsk-manager__image {
+  background-image: url('../../assets/images/projects/320px/todo.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/todo.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/todo.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/todo.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/todo.png');
+  }
+}
+
+.game__image {
+  background-image: url('../../assets/images/projects/320px/2048.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/2048.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/2048.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/2048.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/2048.png');
+  }
+}
+
+.design-studio__image {
+  background-image: url('../../assets/images/projects/320px/design-studio.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/design-studio.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/design-studio.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/design-studio.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/design-studio.png');
+  }
+}
+
+.dots-container {
+  display: flex;
+  padding-top: 25px;
+  justify-content: center;
+  gap: 3px;
+
+  @include onTablet {
+    padding-top: 30px;
+  }
+}
+
+.dot {
+  position: relative;
+  width: 35px;
+  height: 2px;
+  background-color: $color-secondary;
+  cursor: pointer;
+
+  @include onTablet {
+    width: 55px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: -1;
+  }
+}
+
+.dot--active {
+  background-color: $color-accent;
+}

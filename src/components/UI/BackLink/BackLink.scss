@@ -1,0 +1,20 @@
+.back__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url('../../../assets/icons/arrow-accent-left.svg');
+    background-repeat: no-repeat;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+}

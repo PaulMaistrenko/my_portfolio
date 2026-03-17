@@ -1,10 +1,11 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import './App.scss';
-//import { useMainContext } from './context/MainContext';
+import { useMainContext } from './context/MainContext';
 //import { useState } from 'react';
+import { FooterMobile } from './components/FooterMobile';
 
 export const App = () => {
-  //const { currentPage } = useMainContext();
+  const { currentPage } = useMainContext();
   const location = useLocation();
   //const [isMobile, setIsMobile] = useState(false);
 
@@ -14,7 +15,7 @@ export const App = () => {
         <div key={location.pathname}>
           <Outlet />
         </div>
-        {/*currentPage !== 'home' && <FooterMobile />*/}
+        {currentPage !== 'home' && <FooterMobile />}
       </div>
     </div>
   );

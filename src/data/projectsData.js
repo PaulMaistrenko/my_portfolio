@@ -11,7 +11,7 @@ export const projectsData = [
       'Chrome Developer Tools',
       'BEM',
     ],
-    backImage: 'strategic-agency',
+    backImage: 'kondo-kings',
     description:
       'Pixel-perfect adaptive landing pages: crisp design, flawless responsiveness, maximum conversion.',
     projects: [

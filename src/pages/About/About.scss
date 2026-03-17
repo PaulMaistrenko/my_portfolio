@@ -1,0 +1,147 @@
+.about-page__image {
+  margin-bottom: 48px;
+  height: 230px;
+  width: 230px;
+  background-image: url('../../assets/images/about/main-photo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 8px 10px 3px rgba(100, 255, 218, 0.25);
+  transition: all 0.5s;
+
+  @include onDesktop {
+    margin-bottom: 60px;
+    height: 285px;
+    width: 285px;
+    grid-row: 1/3;
+  }
+
+  &:hover {
+    transform: scale(105%);
+    box-shadow:none
+  }
+}
+
+.greeting__block {
+  @include onDesktop {
+    grid-row: 1/2;
+  }
+}
+
+.greeting {
+  margin-bottom: 15px;
+
+  @include onDesktop {
+    font-size: 22px;
+  }
+}
+
+.name {
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 120%;
+
+  @include onDesktop {
+    margin-bottom: 0;
+    font-size: 36px;
+  }
+}
+
+.short-description {
+  padding-bottom: 42px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 175%;
+  grid-row: 2/3;
+  text-align: justify;
+  font-size: 14px;
+
+  @include onDesktop {
+    font-size: 18px;
+  }
+}
+
+.additional-information__button {
+  margin-left: 6px;
+
+  span {
+    letter-spacing: 3px;
+  }
+}
+
+.button--hidden {
+  display: none;
+}
+
+.additional-information {
+  margin-bottom: 40px;
+  grid-row: 3/4;
+
+  @include onTablet {
+    position: relative;
+    height: 500px;
+    overflow-x: auto;
+  }
+
+  @include onDesktop {
+    margin-bottom: 120px;
+    overflow-x: visible;
+    grid-row: 3/3;
+    height: max-content;
+  }
+}
+
+.additional-information__title {
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 145%;
+
+  @include onDesktop {
+    margin-bottom: 46px;
+    width: 410px;
+    font-size: 26px;
+  }
+}
+
+.additional-information__text {
+  font-family: 'Roboto', sans-serif;
+  line-height: 175%;
+  overflow-x: auto;
+  text-align: justify;
+
+  @include onDesktop {
+    font-size: 18px;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 70px;
+  grid-row: 2/4;
+
+  @include onTablet {
+    margin-bottom: 0;
+  }
+
+  @include onDesktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-row: 5/6;
+  }
+}
+
+.features__item {
+  transition: transform 0.5s ease;
+  @include onDesktop {
+    width: 326px;
+  }
+
+  &:hover {
+    transform: scale(105%);
+  }
+}

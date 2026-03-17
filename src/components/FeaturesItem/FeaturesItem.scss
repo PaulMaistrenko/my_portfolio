@@ -1,0 +1,70 @@
+.feature__title {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 175%;
+
+  @include onDesktop {
+    font-size: 16px;
+  }
+}
+
+.features-item__top {
+  display: flex;
+  align-items: center;
+  padding-inline: 15px;
+  width: max-content;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid rgba(55, 62, 83, 0.5);
+  background: #06132b;
+  box-shadow: 0px 0px 3px 3px rgba(100, 255, 218, 0.2);
+
+  @include onDesktop {
+    padding-block: 5px;
+  }
+}
+
+.feature__content {
+  padding: 15px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid rgba(55, 62, 83, 0.5);
+  box-shadow: 0px 3px 3px 3px rgba(100, 255, 218, 0.2);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 25, 47, 1) 15%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  @include onDesktop {
+    font-size: 16px;
+  }
+}
+
+.feature-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include onDesktop {
+    gap: 16px;
+  }
+}
+
+.feauture-content__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url('../../assets/icons/arrow-accent-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

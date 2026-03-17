@@ -1,0 +1,173 @@
+.contacts {
+  position: relative;
+}
+
+.contacts-page__description {
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 175%;
+  font-size: 18px;
+
+  @include onTablet {
+    font-size: 24px;
+  }
+}
+
+.contacts-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+
+  @include onDesktop {
+    font-size: 18px;
+  }
+}
+
+.contacts-title {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%;
+  font-size: 14px;
+
+  @include onTablet {
+    font-size: 16px;
+  }
+}
+
+.contacts-link {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+
+  @include onTablet {
+    font-size: 18px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  input {
+    padding: 5px 0 8px 8px;
+    border-bottom: 0.5px solid $color-secondary;
+
+    &::placeholder {
+      color: $color-secondary;
+      opacity: 0.3;
+    }
+
+    @include onTablet {
+      width: 228px;
+    }
+
+    @include onDesktop {
+      width: 450px;
+    }
+  }
+
+  input:-webkit-autofill {
+    background-color: #000 !important;
+    color: #333 !important;
+    border: 2px solid #0077cc !important;
+  }
+
+  textarea {
+    padding: 5px 8px;
+    margin-bottom: 25px;
+    border: 0.5px solid $color-secondary;
+    resize: none;
+
+    &::placeholder {
+      color: $color-secondary;
+      opacity: 0.3;
+    }
+
+    @include onDesktop {
+      margin-bottom: 50px;
+      width: 450px;
+    }
+  }
+
+  @include onTablet {
+    width: 228px;
+  }
+}
+
+.grid-row--tablet-1-5 {
+  grid-row: 1/5;
+}
+
+.contact-form__button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  margin-bottom: 5px;
+  padding-inline: 15px;
+  padding-block: 10px;
+  width: max-content;
+  height: 35px;
+  color: $text-accent;
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  text-transform: lowercase;
+  border: 2px solid $color-accent;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 7px rgba(100, 255, 218, 0.2);
+  transition: all 0.5s ease;
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url('../../assets/icons/send-button-accent.svg');
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    background-color: $color-accent;
+    color: $background-color;
+
+    &::after {
+      background-image: url('../../assets/icons/send-button-dark.svg');
+    }
+  }
+}
+
+.to-top-button {
+  position: absolute;
+  bottom: 44px;
+  right: 80px;
+  width: 32px;
+  height: 32px;
+  background-image: url('../../assets/icons/global-arrow-accent.svg');
+  background-position: center;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  border: 1px solid $color-accent;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+
+  
+  &:hover {
+    background-color: $color-accent;
+    color: $background-color;
+    background-image: url('../../assets/icons/global-arrow-dark.svg');
+  }
+}
+
+.contacts-item .to-top-button {
+  @include onDesktop {
+    position: relative;
+    right: -480px;
+  }
+}

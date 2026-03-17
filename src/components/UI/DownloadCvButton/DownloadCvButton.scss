@@ -1,0 +1,77 @@
+.cv-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 35px;
+  width: max-content;
+  margin: 0 auto;
+  padding-inline: 15px;
+  padding-block: 10px;
+  border: 2px solid $color-accent;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 7px rgba(100, 255, 218, 0.2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  @include onTablet {
+    margin: 0;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url('../../../assets/icons/cv-download.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $color-accent;
+    color: $background-color;
+    &::before {
+      background-image: url('../../../assets/icons/cv-download-dark.svg');
+    }
+  }
+}
+
+.sub-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  background-color: $background-color;
+  border: 1px solid $color-accent;
+  color: $text-accent;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+}
+
+.left-subbutton {
+  left: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+.right-subbutton {
+  right: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.cv-download-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
