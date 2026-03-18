@@ -13,8 +13,4 @@
     background-image: url('../../../assets/icons/arrow-accent-left.svg');
     background-repeat: no-repeat;
   }
-
-  @include onTablet {
-    display: none;
-  }
 }

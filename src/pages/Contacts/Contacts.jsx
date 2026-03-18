@@ -141,12 +141,6 @@ export const Contacts = () => {
                   {t('Send')}
                 </button>
               </form>
-              {!isMobile && (
-                <button
-                  className="to-top-button"
-                  onClick={() => scrollToTop()}
-                />
-              )}
             </li>
           </div>
         </ul>

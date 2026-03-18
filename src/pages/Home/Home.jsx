@@ -52,14 +52,14 @@ export const Home = () => {
             </h1>
             <p className="start-page__subtitle">Frontend Developer</p>
           </div>
-          <nav className="mobile__nav">
+          <nav className="home-page__nav">
             <LanguageSelector />
-            <ul className="mobile__nav-list">
+            <ul className="home-page__nav-list">
               {homePageNavItems.map((item) => (
-                <li key={item.id} className="mobile__nav-item">
+                <li key={item.id} className="home-page__nav-item">
                   <NavLink
                     to={item.href}
-                    className="mobile__nav-link"
+                    className="home-page__nav-link"
                     onClick={handleMenuState}
                   >
                     {`.${t(item.label)}`}
@@ -67,13 +67,13 @@ export const Home = () => {
                 </li>
               ))}
               <button
-                className="mobile__nav-item"
+                className="home-page__nav-item"
                 onClick={() => {
                   localStorage.removeItem('visited');
                   setIsLoading(true);
                 }}
               >
-                <p className="mobile__nav-link">
+                <p className="home-page__nav-link">
                   <span>.</span>
                   {t('to start')}
                 </p>

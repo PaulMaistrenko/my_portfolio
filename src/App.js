@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import './App.scss';
 import { useMainContext } from './context/MainContext';
-//import { useState } from 'react';
+
 import { FooterMobile } from './components/FooterMobile';
 
 export const App = () => {
