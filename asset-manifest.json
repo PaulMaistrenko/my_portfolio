@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.0a88fa5d.css",
+    "main.js": "/my_portfolio/static/js/main.eb13f550.js",
+    "static/media/miami.png": "/my_portfolio/static/media/miami.cb5b4819ce5290784782.png",
+    "static/media/maimi-condo-kings.png": "/my_portfolio/static/media/maimi-condo-kings.3a54e008612549765e45.png",
+    "static/media/landing-pages.png": "/my_portfolio/static/media/landing-pages.985ff65d608dfc4f627e.png",
+    "static/media/design-studio.png": "/my_portfolio/static/media/design-studio.2cf4e64e065a03137fc3.png",
+    "static/media/main-photo.png": "/my_portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
+    "static/media/todo.png": "/my_portfolio/static/media/todo.9aba056b7b681ec0fda1.png",
+    "static/media/2048.png": "/my_portfolio/static/media/2048.b16b337313dbdf1158da.png",
+    "static/media/cv-download.svg": "/my_portfolio/static/media/cv-download.5d8579a9e2c53952d5eb.svg",
+    "index.html": "/my_portfolio/index.html",
+    "static/media/cv-download-dark.svg": "/my_portfolio/static/media/cv-download-dark.e570cdc021cb449a1dcb.svg",
+    "static/media/git-hub_icon--green.svg": "/my_portfolio/static/media/git-hub_icon--green.4f7454159d4e2a36651f.svg",
+    "static/media/git-hub_icon--light.svg": "/my_portfolio/static/media/git-hub_icon--light.0bd0ffecbeaf80f06dc2.svg",
+    "static/media/open-in-new-window-accent.svg": "/my_portfolio/static/media/open-in-new-window-accent.7960a95075f5bfcc834f.svg",
+    "static/media/linked-in_icon--green.svg": "/my_portfolio/static/media/linked-in_icon--green.12a12ec03536f4982642.svg",
+    "static/media/linked-in_icon--light.svg": "/my_portfolio/static/media/linked-in_icon--light.82430e21d133a8188f4b.svg",
+    "static/media/open-in-new-window.svg": "/my_portfolio/static/media/open-in-new-window.1bdd5760bb3d0b92b5be.svg",
+    "static/media/send-button-accent.svg": "/my_portfolio/static/media/send-button-accent.bd716d9211a91527df3f.svg",
+    "static/media/send-button-dark.svg": "/my_portfolio/static/media/send-button-dark.199819c0b0318f9c1cd7.svg",
+    "static/media/global-arrow-accent.svg": "/my_portfolio/static/media/global-arrow-accent.e8a7593b611d3d6570d8.svg",
+    "static/media/global-arrow-dark.svg": "/my_portfolio/static/media/global-arrow-dark.40bef20b1aac99f98be3.svg",
+    "static/media/slider-arrow-right-accent.svg": "/my_portfolio/static/media/slider-arrow-right-accent.fe45c0a790d8ba8d3d0b.svg",
+    "static/media/slider-arrow-right-grey.svg": "/my_portfolio/static/media/slider-arrow-right-grey.2d5a7d83402883cbbb04.svg",
+    "static/media/slider-arrow-left-accent.svg": "/my_portfolio/static/media/slider-arrow-left-accent.f34c845c4f11c9141002.svg",
+    "static/media/slider-arrow-left-grey.svg": "/my_portfolio/static/media/slider-arrow-left-grey.5831872fc074583427b0.svg",
+    "static/media/arrow-accent-right.svg": "/my_portfolio/static/media/arrow-accent-right.d60ff2744861c7ae2c4c.svg",
+    "static/media/arrow-accent-left.svg": "/my_portfolio/static/media/arrow-accent-left.7943726a6730fae53bf4.svg",
+    "main.0a88fa5d.css.map": "/my_portfolio/static/css/main.0a88fa5d.css.map",
+    "main.eb13f550.js.map": "/my_portfolio/static/js/main.eb13f550.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a88fa5d.css",
+    "static/js/main.eb13f550.js"
+  ]
+}
