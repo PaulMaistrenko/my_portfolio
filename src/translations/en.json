@@ -29,6 +29,7 @@
   "Landing pages": "Landing pages",
   "Pixel-perfect adaptive landing pages: crisp design, flawless responsiveness, maximum conversion.": "Pixel-perfect adaptive landing pages: crisp design, flawless responsiveness, maximum conversion.",
   "Task manager": "Task manager",
+  "Multi-page website": "Multi-page website",
   "An interactive to-do created using functional components, hooks, fetch, routing, and local storage.": "An interactive to-do created using functional components, hooks, fetch, routing, and local storage.",
   "Strategy squared": "Strategy squared",
   "The game is written in pure Java Script.": "The game is written in pure Java Script.",
@@ -46,5 +47,6 @@
   "Send": "Send",
   "Sorry": "Sorry",
   "Notification text": "This project is adapted for screen resolutions of 1154 px and above. You will be able to access this link from your laptop or desktop computer. The mobile version is currently under development.",
-  "close": "close"
+  "close": "close",
+  "A responsive multi-page website for an interior design studio": "A responsive multi-page website for an interior design studio"
 }
