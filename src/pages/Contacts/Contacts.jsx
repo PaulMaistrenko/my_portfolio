@@ -7,7 +7,7 @@ import { useMainContext } from '../../context/MainContext';
 import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
 
-const FORM_ENDPOINT = 'https://formspree.io/f/xqearpeo';
+const FORM_ENDPOINT = 'https://formspree.io/f/xjgalpzl';
 
 export const Contacts = () => {
   const { currentPage, setCurrentPage, country } = useMainContext();
