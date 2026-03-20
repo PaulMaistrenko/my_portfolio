@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -20,9 +21,16 @@ export const Projects = () => {
   });
 
   return (
-    <section id="projects" className="page projects">
-      <div className="container">
-        <BackLink />
+    <motion.main
+      className="page home-page"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+    >
+      <section id="projects" className="page projects">
+        <div className="container">
+          <BackLink />
           <h1 className="page__title text-secondary">
             {t('projects').charAt(0).toUpperCase() + t('projects').slice(1)}
           </h1>
@@ -34,14 +42,15 @@ export const Projects = () => {
             {t('projects page description part 3')}
           </article>
 
-        <ul className="projects-page-list">
-          {projectsData.map((projectsItem) => (
-              <li className="projects-page-item">
+          <ul className="projects-page-list">
+            {projectsData.map((projectsItem) => (
+              <li className="projects-page-item" key={projectsItem.id}>
                 <ProjectsPageItem projectsItem={projectsItem} />
               </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </motion.main>
   );
 };

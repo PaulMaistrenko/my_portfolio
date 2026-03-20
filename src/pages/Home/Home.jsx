@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -41,48 +42,64 @@ export const Home = () => {
   };
 
   return (
-    <section className="home-page">
-      {isLoading ? (
-        <StartPage isLoading={isLoading} />
-      ) : (
-        <div className="home-page__content">
-          <div className="home-page__top">
-            <h1 className="start-page__title text-primary">
-              I<span>'</span>M <br /> Pavlo Maistrenko
-            </h1>
-            <p className="start-page__subtitle">Frontend Developer</p>
-          </div>
-          <nav className="home-page__nav">
-            <LanguageSelector />
-            <ul className="home-page__nav-list">
-              {homePageNavItems.map((item) => (
-                <li key={item.id} className="home-page__nav-item">
-                  <NavLink
-                    to={item.href}
-                    className="home-page__nav-link"
-                    onClick={handleMenuState}
+    <motion.main
+      className="page home-page"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+    >
+      <section className="home-page">
+        {isLoading ? (
+          <StartPage isLoading={isLoading} />
+        ) : (
+          <motion.main
+            className="page home-page"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="home-page__content">
+              <div className="home-page__top">
+                <h1 className="start-page__title text-primary">
+                  I<span>&apos;</span>M <br /> Pavlo Maistrenko
+                </h1>
+                <p className="start-page__subtitle">Frontend Developer</p>
+              </div>
+              <nav className="home-page__nav">
+                <LanguageSelector />
+                <ul className="home-page__nav-list">
+                  {homePageNavItems.map((item) => (
+                    <li key={item.id} className="home-page__nav-item">
+                      <NavLink
+                        to={item.href}
+                        className="home-page__nav-link"
+                        onClick={handleMenuState}
+                      >
+                        {`.${t(item.label)}`}
+                      </NavLink>
+                    </li>
+                  ))}
+                  <button
+                    className="home-page__nav-item"
+                    onClick={() => {
+                      localStorage.removeItem('visited');
+                      setIsLoading(true);
+                    }}
                   >
-                    {`.${t(item.label)}`}
-                  </NavLink>
-                </li>
-              ))}
-              <button
-                className="home-page__nav-item"
-                onClick={() => {
-                  localStorage.removeItem('visited');
-                  setIsLoading(true);
-                }}
-              >
-                <p className="home-page__nav-link">
-                  <span>.</span>
-                  {t('to start')}
-                </p>
-              </button>
-            </ul>
-            <SocialLinks />
-          </nav>
-        </div>
-      )}
-    </section>
+                    <p className="home-page__nav-link">
+                      <span>.</span>
+                      {t('to start')}
+                    </p>
+                  </button>
+                </ul>
+                <SocialLinks />
+              </nav>
+            </div>
+          </motion.main>
+        )}
+      </section>
+    </motion.main>
   );
 };

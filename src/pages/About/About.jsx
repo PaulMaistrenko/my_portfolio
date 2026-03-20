@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import classNames from 'classnames';
 
 import { scrollToTop } from '../../utils/scrollToTop';
@@ -28,67 +29,75 @@ export const About = () => {
   }, [isMobile, setCurrentPage]);
 
   return (
-    <section id="about" className="page about">
-      <div className="container">
-        <div className="page-top__wrapper">
-          <BackLink />
-        </div>
-        <h1 className="page__title text-secondary">
-          {t('about').charAt(0).toUpperCase() + t('about').slice(1)}
-        </h1>
-        <div className="grid">
-          <div className="about-page__image grid__item--tablet-1-2 grid__item--desktop-1-3"></div>
-          <div className="greeting__block grid__item--tablet-3-4 grid__item--desktop-5-9">
-            <p className="greeting text-accent">{t('gretings')}</p>
-            <p className="name text-primary">{t('name')}</p>
+    <motion.main
+      className="page home-page"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+    >
+      <section id="about" className="page about">
+        <div className="container">
+          <div className="page-top__wrapper">
+            <BackLink />
           </div>
-          <article className="short-description text-secondary grid__item--tablet-1-2 grid__item--desktop-5-8">
-            {t('short description')}
-            <button
-              onClick={() => setMoreInfoOpen(true)}
+          <h1 className="page__title text-secondary">
+            {t('about').charAt(0).toUpperCase() + t('about').slice(1)}
+          </h1>
+          <div className="grid">
+            <div className="about-page__image grid__item--tablet-1-2 grid__item--desktop-1-3"></div>
+            <div className="greeting__block grid__item--tablet-3-4 grid__item--desktop-5-9">
+              <p className="greeting text-accent">{t('gretings')}</p>
+              <p className="name text-primary">{t('name')}</p>
+            </div>
+            <article className="short-description text-secondary grid__item--tablet-1-2 grid__item--desktop-5-8">
+              {t('short description')}
+              <button
+                onClick={() => setMoreInfoOpen(true)}
+                className={classNames(
+                  'additional-information__button text-accent on-tablet--hidden',
+                  {
+                    'button--hidden': isMoreInfoOpen,
+                  }
+                )}
+              >
+                <span>...</span>
+                {t('more')}
+              </button>
+            </article>
+            <article
               className={classNames(
-                'additional-information__button text-accent on-tablet--hidden',
+                'additional-information grid__item--tablet-1-2 grid__item--desktop-2-8',
                 {
-                  'button--hidden': isMoreInfoOpen,
+                  hidden: !isMoreInfoOpen,
                 }
               )}
             >
-              <span>...</span>
-              {t('more')}
-            </button>
-          </article>
-          <article
-            className={classNames(
-              'additional-information grid__item--tablet-1-2 grid__item--desktop-2-8',
-              {
-                hidden: !isMoreInfoOpen,
-              }
-            )}
-          >
-            <h2 className="additional-information__title text-primary">
-              {t('additional information title')}
-            </h2>
-            <p className="additional-information__text text-secondary ">
-              {t('additional information')}
-              <button
-                onClick={() => setMoreInfoOpen(false)}
-                className="additional-information__button text-accent on-tablet--hidden"
-              >
-                <span>...</span>
-                {t('less')}
-              </button>
-            </p>
-          </article>
-          <ul className="features__list grid__item--tablet-3-4 grid__item--desktop-1-9">
-            {featuresData.map((item) => (
-                <li className="features__item">
+              <h2 className="additional-information__title text-primary">
+                {t('additional information title')}
+              </h2>
+              <p className="additional-information__text text-secondary ">
+                {t('additional information')}
+                <button
+                  onClick={() => setMoreInfoOpen(false)}
+                  className="additional-information__button text-accent on-tablet--hidden"
+                >
+                  <span>...</span>
+                  {t('less')}
+                </button>
+              </p>
+            </article>
+            <ul className="features__list grid__item--tablet-3-4 grid__item--desktop-1-9">
+              {featuresData.map((item) => (
+                <li className="features__item" key={item.id}>
                   <FeaturesItem title={item.title} features={item.features} />
                 </li>
-            ))}
-          </ul>
+              ))}
+            </ul>
+          </div>
+          {isMobile && <DownloadCvButton />}
         </div>
-        {isMobile && <DownloadCvButton />}
-      </div>
-    </section>
+      </section>
+    </motion.main>
   );
 };
