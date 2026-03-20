@@ -46,9 +46,11 @@ export const About = () => {
             {t('about').charAt(0).toUpperCase() + t('about').slice(1)}
           </h1>
           <div className="grid">
-            <FadeInWhenVisible direction="up">
-              <div className="about-page__image grid__item--tablet-1-2 grid__item--desktop-1-3"></div>
-            </FadeInWhenVisible>
+            <div className="about-page-image__wrapper grid__item--tablet-1-2 grid__item--desktop-1-3">
+              <FadeInWhenVisible direction="right">
+                <div className="about-page__image"></div>
+              </FadeInWhenVisible>
+            </div>
 
             <div className="greeting__block grid__item--tablet-3-4 grid__item--desktop-5-9">
               <p className="greeting text-accent">{t('gretings')}</p>
@@ -91,13 +93,20 @@ export const About = () => {
                 </button>
               </p>
             </article>
-            <ul className="features__list grid__item--tablet-3-4 grid__item--desktop-1-9">
-              {featuresData.map((item) => (
-                <li className="features__item" key={item.id}>
-                  <FeaturesItem title={item.title} features={item.features} />
-                </li>
-              ))}
-            </ul>
+            <div className="features-content__wrapper grid__item--tablet-3-4 grid__item--desktop-1-9">
+              <FadeInWhenVisible direction="up">
+                <ul className="features__list ">
+                  {featuresData.map((item) => (
+                    <li className="features__item" key={item.id}>
+                      <FeaturesItem
+                        title={item.title}
+                        features={item.features}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </FadeInWhenVisible>
+            </div>
           </div>
           {isMobile && <DownloadCvButton />}
         </div>

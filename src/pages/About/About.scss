@@ -13,12 +13,17 @@
     margin-bottom: 60px;
     height: 285px;
     width: 285px;
-    grid-row: 1/3;
   }
 
   &:hover {
     transform: scale(105%);
     box-shadow:none
+  }
+}
+
+.about-page-image__wrapper {
+  @include onDesktop {
+    grid-row: 1/3;
   }
 }
 
