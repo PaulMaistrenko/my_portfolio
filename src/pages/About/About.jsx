@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { FadeInWhenVisible } from '../../components/UI/FadeInWhenVisible/FadeInWhenVisible';
 import classNames from 'classnames';
 
 import { scrollToTop } from '../../utils/scrollToTop';
@@ -45,7 +46,10 @@ export const About = () => {
             {t('about').charAt(0).toUpperCase() + t('about').slice(1)}
           </h1>
           <div className="grid">
-            <div className="about-page__image grid__item--tablet-1-2 grid__item--desktop-1-3"></div>
+            <FadeInWhenVisible direction="up">
+              <div className="about-page__image grid__item--tablet-1-2 grid__item--desktop-1-3"></div>
+            </FadeInWhenVisible>
+
             <div className="greeting__block grid__item--tablet-3-4 grid__item--desktop-5-9">
               <p className="greeting text-accent">{t('gretings')}</p>
               <p className="name text-primary">{t('name')}</p>
