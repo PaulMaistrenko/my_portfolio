@@ -1,4 +1,4 @@
-# Павло Майстренко — Frontend Developer Portfolio
+# Pavlo Maistrenko — Frontend Developer Portfolio
 
 **Live portfolio:** https://paulmaistrenko.github.io/my_portfolio/
 
