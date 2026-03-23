@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.6693126d.css",
+    "main.css": "/my_portfolio/static/css/main.12d210ed.css",
     "main.js": "/my_portfolio/static/js/main.db82ac81.js",
     "static/media/miami.png": "/my_portfolio/static/media/miami.cb5b4819ce5290784782.png",
     "static/media/maimi-condo-kings.png": "/my_portfolio/static/media/maimi-condo-kings.3a54e008612549765e45.png",
@@ -28,11 +28,11 @@
     "static/media/slider-arrow-left-grey.svg": "/my_portfolio/static/media/slider-arrow-left-grey.5831872fc074583427b0.svg",
     "static/media/arrow-accent-right.svg": "/my_portfolio/static/media/arrow-accent-right.d60ff2744861c7ae2c4c.svg",
     "static/media/arrow-accent-left.svg": "/my_portfolio/static/media/arrow-accent-left.7943726a6730fae53bf4.svg",
-    "main.6693126d.css.map": "/my_portfolio/static/css/main.6693126d.css.map",
+    "main.12d210ed.css.map": "/my_portfolio/static/css/main.12d210ed.css.map",
     "main.db82ac81.js.map": "/my_portfolio/static/js/main.db82ac81.js.map"
   },
   "entrypoints": [
-    "static/css/main.6693126d.css",
+    "static/css/main.12d210ed.css",
     "static/js/main.db82ac81.js"
   ]
 }
