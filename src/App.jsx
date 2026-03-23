@@ -8,7 +8,6 @@ import { FooterMobile } from './components/FooterMobile';
 export const App = () => {
   const { currentPage } = useMainContext();
   const location = useLocation();
-  //const [isMobile, setIsMobile] = useState(false);
 
   return (
     <div className="app-container">

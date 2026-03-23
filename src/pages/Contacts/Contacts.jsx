@@ -85,7 +85,7 @@ export const Contacts = () => {
 
   return (
     <motion.main
-      className="page home-page"
+      className="page contacts"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}

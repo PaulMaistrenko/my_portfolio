@@ -94,18 +94,13 @@ export const About = () => {
               </p>
             </article>
             <div className="features-content__wrapper grid__item--tablet-3-4 grid__item--desktop-1-9">
-              <FadeInWhenVisible direction="up">
-                <ul className="features__list ">
-                  {featuresData.map((item) => (
-                    <li className="features__item" key={item.id}>
-                      <FeaturesItem
-                        title={item.title}
-                        features={item.features}
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </FadeInWhenVisible>
+              <ul className="features__list ">
+                {featuresData.map((item) => (
+                  <li className="features__item" key={item.id}>
+                    <FeaturesItem title={item.title} features={item.features} />
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           {isMobile && <DownloadCvButton />}

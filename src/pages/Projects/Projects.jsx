@@ -22,7 +22,7 @@ export const Projects = () => {
 
   return (
     <motion.main
-      className="page home-page"
+      className="page projects"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
