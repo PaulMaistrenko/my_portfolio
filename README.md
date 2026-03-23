@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Павло Майстренко — Frontend Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Live portfolio:** https://paulmaistrenko.github.io/my_portfolio/
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This portfolio showcases selected frontend projects that helped me master technologies like HTML, CSS, JavaScript, React, TypeScript, and more. Each project reflects my skills in building responsive, interactive, and clean web applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Projects
 
-### `npm test`
+### Landing Pages
+- **Overview:** Pixel-perfect adaptive landing pages with crisp design, flawless responsiveness, and maximum conversion focus.  
+- **Tech Stack:** JavaScript, HTML, CSS, Sass (SCSS), Figma, Git/GitHub, VS Code, Chrome Developer Tools, BEM  
+- **Demo / Code:** [Live Demo](https://my-works-showcase.github.io/layout_miami-condo-kings/) | [GitHub](https://github.com/my-works-showcase/layout_miami-condo-kings)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Interior Design Studio (Multi-page Website)
+- **Overview:** A responsive multi-page website for an interior design studio with smooth animations and a structured SCSS architecture.  
+- **Tech Stack:** JavaScript, HTML, CSS, Sass (SCSS), React, Fetch/Axios, REST API, Figma, Git/GitHub  
+- **Demo / Code:** [Live Demo](https://my-works-showcase.github.io/interior-design-studio/) | [GitHub](https://github.com/my-works-showcase/interior-design-studio)
 
-### `npm run build`
+### Task Manager (React Todo App)
+- **Overview:** An interactive to-do app created using functional components, hooks, fetch, routing, and localStorage.  
+- **Tech Stack:** JavaScript, TypeScript, HTML, CSS, Sass (SCSS), React, Fetch/Axios, REST API, Figma, Git/GitHub, Chrome Developer Tools  
+- **Demo / Code:** [Live Demo](https://my-works-showcase.github.io/react-todo-app/) | [GitHub](https://github.com/my-works-showcase/react-todo-app)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Puzzle Game (2048)
+- **Overview:** Classic 2048 puzzle game implemented in pure JavaScript.  
+- **Tech Stack:** JavaScript, HTML, CSS, Sass (SCSS), Figma, Git/GitHub, VS Code, Chrome Developer Tools, BEM  
+- **Demo / Code:** [Live Demo](https://my-works-showcase.github.io/game_summatrix/) | [GitHub](https://github.com/my-works-showcase/game_summatrix)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contacts
 
-### `npm run eject`
+Always in touch for you:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Call me:** +49 160 96294939  
+- **Telegram:** [@Pavlo_Maistrenko](https://t.me/Pavlo_Maistrenko)  
+- **Email:** maystrenko.p@gmail.com  
+- **Follow me:** [LinkedIn](https://www.linkedin.com/in/pavlomaistrenko/) | [GitHub](https://github.com/PaulMaistrenko)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Notes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- All projects are fully responsive for desktop and mobile.  
+- This portfolio demonstrates my frontend development skills, UI/UX capabilities, and attention to detail.
