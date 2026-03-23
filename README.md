@@ -1,51 +1,98 @@
-# Pavlo Maistrenko — Frontend Developer Portfolio
+# Pavlo Maistrenko — Frontend Developer
 
-**Live portfolio:** https://paulmaistrenko.github.io/my_portfolio/
+**Live Portfolio:** https://paulmaistrenko.github.io/my_portfolio/
 
 ---
 
 ## Overview
 
-This portfolio showcases selected frontend projects that helped me master technologies like HTML, CSS, JavaScript, React, TypeScript, and more. Each project reflects my skills in building responsive, interactive, and clean web applications.
+Frontend Developer specializing in building responsive, high-performance web applications using React and modern JavaScript.
+
+I focus on creating user-friendly interfaces, integrating APIs, and delivering clean, maintainable code that solves real business problems.
+
+This portfolio showcases projects that demonstrate UI development, state management, API integration, and responsive design.
 
 ---
 
 ## Projects
 
 ### Landing Pages
-- **Overview:** Pixel-perfect adaptive landing pages with crisp design, flawless responsiveness, and maximum conversion focus.  
-- **Tech Stack:** JavaScript, HTML, CSS, Sass (SCSS), Figma, Git/GitHub, VS Code, Chrome Developer Tools, BEM  
-- **Demo / Code:** [Live Demo](https://my-works-showcase.github.io/layout_miami-condo-kings/) | [GitHub](https://github.com/my-works-showcase/layout_miami-condo-kings)
 
-### Interior Design Studio (Multi-page Website)
-- **Overview:** A responsive multi-page website for an interior design studio with smooth animations and a structured SCSS architecture.  
-- **Tech Stack:** JavaScript, HTML, CSS, Sass (SCSS), React, Fetch/Axios, REST API, Figma, Git/GitHub  
-- **Demo / Code:** [Live Demo](https://my-works-showcase.github.io/interior-design-studio/) | [GitHub](https://github.com/my-works-showcase/interior-design-studio)
+- Developed responsive landing pages based on Figma designs  
+- Implemented mobile-first layouts and cross-browser compatibility  
+- Optimized performance for fast loading and smooth user experience  
 
-### Task Manager (React Todo App)
-- **Overview:** An interactive to-do app created using functional components, hooks, fetch, routing, and localStorage.  
-- **Tech Stack:** JavaScript, TypeScript, HTML, CSS, Sass (SCSS), React, Fetch/Axios, REST API, Figma, Git/GitHub, Chrome Developer Tools  
-- **Demo / Code:** [Live Demo](https://my-works-showcase.github.io/react-todo-app/) | [GitHub](https://github.com/my-works-showcase/react-todo-app)
+**Tech Stack:** JavaScript, HTML, CSS, Sass (SCSS), BEM, Figma, Git  
 
-### Puzzle Game (2048)
-- **Overview:** Classic 2048 puzzle game implemented in pure JavaScript.  
-- **Tech Stack:** JavaScript, HTML, CSS, Sass (SCSS), Figma, Git/GitHub, VS Code, Chrome Developer Tools, BEM  
-- **Demo / Code:** [Live Demo](https://my-works-showcase.github.io/game_summatrix/) | [GitHub](https://github.com/my-works-showcase/game_summatrix)
+**Demo / Code:**  
+Live: https://my-works-showcase.github.io/layout_miami-condo-kings/  
+GitHub: https://github.com/my-works-showcase/layout_miami-condo-kings  
 
 ---
 
-## Contacts
+### Interior Design Studio (Multi-page Website)
 
-Always in touch for you:
+- Built a multi-page React application with reusable components  
+- Integrated REST API for dynamic content loading  
+- Implemented responsive layouts and smooth UI interactions  
 
-- **Call me:** +49 160 96294939  
-- **Telegram:** [@Pavlo_Maistrenko](https://t.me/Pavlo_Maistrenko)  
-- **Email:** maystrenko.p@gmail.com  
-- **Follow me:** [LinkedIn](https://www.linkedin.com/in/pavlomaistrenko/) | [GitHub](https://github.com/PaulMaistrenko)
+**Tech Stack:** React, JavaScript, SCSS, REST API, Axios, Figma, Git  
+
+**Demo / Code:**  
+Live: https://my-works-showcase.github.io/interior-design-studio/  
+GitHub: https://github.com/my-works-showcase/interior-design-studio  
+
+---
+
+### Task Manager (React + TypeScript)
+
+- Built a task management application using React and TypeScript  
+- Implemented CRUD operations with API integration  
+- Managed state using React hooks  
+- Persisted data using localStorage  
+
+**Tech Stack:** React, TypeScript, SCSS, REST API, Axios, Git  
+
+**Demo / Code:**  
+Live: https://my-works-showcase.github.io/react-todo-app/  
+GitHub: https://github.com/my-works-showcase/react-todo-app  
+
+---
+
+### Puzzle Game (2048)
+
+- Developed a browser-based puzzle game using pure JavaScript  
+- Implemented game logic and dynamic UI updates  
+
+**Tech Stack:** JavaScript, HTML, SCSS, BEM  
+
+**Demo / Code:**  
+Live: https://my-works-showcase.github.io/game_summatrix/  
+GitHub: https://github.com/my-works-showcase/game_summatrix  
+
+---
+
+## Key Skills
+
+- React, TypeScript, JavaScript (ES6+)  
+- REST API integration (Fetch, Axios)  
+- Responsive Design (mobile-first)  
+- SCSS, BEM methodology  
+- Git, GitHub  
+- Performance optimization  
+
+---
+
+## Contact
+
+- Email: maystrenko.p@gmail.com  
+- Telegram: https://t.me/Pavlo_Maistrenko  
+- LinkedIn: https://www.linkedin.com/in/pavlomaistrenko/  
+- GitHub: https://github.com/PaulMaistrenko  
 
 ---
 
 ## Notes
 
-- All projects are fully responsive for desktop and mobile.  
-- This portfolio demonstrates my frontend development skills, UI/UX capabilities, and attention to detail.
+- All projects are fully responsive (desktop, tablet, mobile)  
+- Focus on clean architecture, reusable components, and maintainable code  
