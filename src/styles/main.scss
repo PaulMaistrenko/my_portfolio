@@ -43,10 +43,6 @@ body {
     background: transparent;
   }
 
-  @include onDesktop {
-    padding-top: 60px;
-  }
-
   &__title {
     display: inline-block;
     margin-bottom: 40px;
@@ -73,6 +69,12 @@ body {
       background-color: $color-secondary;
     }
   }
+}
+
+.page-top__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .on-tablet--hidden {

@@ -41,6 +41,7 @@ export const About = () => {
         <div className="container">
           <div className="page-top__wrapper">
             <BackLink />
+            <DownloadCvButton />
           </div>
           <h1 className="page__title text-secondary">
             {t('about').charAt(0).toUpperCase() + t('about').slice(1)}
@@ -103,7 +104,6 @@ export const About = () => {
               </ul>
             </div>
           </div>
-          {isMobile && <DownloadCvButton />}
         </div>
       </section>
     </motion.main>
