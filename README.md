@@ -1,98 +1,113 @@
-# Pavlo Maistrenko — Frontend Developer
+Pavlo Maistrenko — Frontend Developer (React / TypeScript)
+🚀 Live Portfolio
 
-**Live Portfolio:** https://paulmaistrenko.github.io/my_portfolio/
+https://paulmaistrenko.github.io/my_portfolio/
 
----
+👨‍💻 About Me
 
-## Overview
+Frontend Developer specializing in building fast, scalable, and user-friendly web applications using React and modern JavaScript.
 
-Frontend Developer specializing in building responsive, high-performance web applications using React and modern JavaScript.
+I focus on delivering clean, maintainable code and intuitive interfaces that solve real business problems.
+My work combines solid technical implementation with strong attention to UX and performance.
 
-I focus on creating user-friendly interfaces, integrating APIs, and delivering clean, maintainable code that solves real business problems.
+👉 Available for freelance projects and junior frontend roles.
 
-This portfolio showcases projects that demonstrate UI development, state management, API integration, and responsive design.
+🧩 Projects
+🗂 Task Manager (React + TypeScript)
 
----
+Full-featured task management application with CRUD functionality and persistent state.
 
-## Projects
+Highlights:
 
-### Landing Pages
+Implemented full CRUD operations with API integration
+Managed state using React hooks
+Data persistence via localStorage
+Responsive and clean UI
 
-- Developed responsive landing pages based on Figma designs  
-- Implemented mobile-first layouts and cross-browser compatibility  
-- Optimized performance for fast loading and smooth user experience  
+Tech: React, TypeScript, SCSS, REST API, Axios
 
-**Tech Stack:** JavaScript, HTML, CSS, Sass (SCSS), BEM, Figma, Git  
+🔗 Live: https://my-works-showcase.github.io/react-todo-app/
+🔗 Code: https://github.com/my-works-showcase/react-todo-app
 
-**Demo / Code:**  
-Live: https://my-works-showcase.github.io/layout_miami-condo-kings/  
-GitHub: https://github.com/my-works-showcase/layout_miami-condo-kings  
+🏠 Interior Design Studio (Multi-page App)
 
----
+Responsive multi-page React application with dynamic content loading.
 
-### Interior Design Studio (Multi-page Website)
+Highlights:
 
-- Built a multi-page React application with reusable components  
-- Integrated REST API for dynamic content loading  
-- Implemented responsive layouts and smooth UI interactions  
+Built reusable component architecture
+Integrated REST API for dynamic data
+Implemented smooth UI interactions
+Fully responsive layout
 
-**Tech Stack:** React, JavaScript, SCSS, REST API, Axios, Figma, Git  
+Tech: React, JavaScript, SCSS, Axios, REST API
 
-**Demo / Code:**  
-Live: https://my-works-showcase.github.io/interior-design-studio/  
-GitHub: https://github.com/my-works-showcase/interior-design-studio  
+🔗 Live: https://my-works-showcase.github.io/interior-design-studio/
+🔗 Code: https://github.com/my-works-showcase/interior-design-studio
 
----
+🌴 Landing Pages (Figma → Code)
 
-### Task Manager (React + TypeScript)
+Pixel-perfect responsive landing pages based on Figma designs.
 
-- Built a task management application using React and TypeScript  
-- Implemented CRUD operations with API integration  
-- Managed state using React hooks  
-- Persisted data using localStorage  
+Highlights:
 
-**Tech Stack:** React, TypeScript, SCSS, REST API, Axios, Git  
+Mobile-first development
+Cross-browser compatibility
+Optimized performance and loading speed
+Clean SCSS structure using BEM
 
-**Demo / Code:**  
-Live: https://my-works-showcase.github.io/react-todo-app/  
-GitHub: https://github.com/my-works-showcase/react-todo-app  
+Tech: JavaScript, HTML, SCSS, BEM, Figma
 
----
+🔗 Live: https://my-works-showcase.github.io/layout_miami-condo-kings/
+🔗 Code: https://github.com/my-works-showcase/layout_miami-condo-kings
 
-### Puzzle Game (2048)
+🎮 Puzzle Game (2048 Clone)
 
-- Developed a browser-based puzzle game using pure JavaScript  
-- Implemented game logic and dynamic UI updates  
+Browser-based game built with pure JavaScript.
 
-**Tech Stack:** JavaScript, HTML, SCSS, BEM  
+Highlights:
 
-**Demo / Code:**  
-Live: https://my-works-showcase.github.io/game_summatrix/  
-GitHub: https://github.com/my-works-showcase/game_summatrix  
+Implemented full game logic
+Dynamic UI updates
+Clean and modular structure
 
----
+Tech: JavaScript, HTML, SCSS
 
-## Key Skills
+🔗 Live: https://my-works-showcase.github.io/game_summatrix/
+🔗 Code: https://github.com/my-works-showcase/game_summatrix
 
-- React, TypeScript, JavaScript (ES6+)  
-- REST API integration (Fetch, Axios)  
-- Responsive Design (mobile-first)  
-- SCSS, BEM methodology  
-- Git, GitHub  
-- Performance optimization  
+🛠 Tech Stack
 
----
+Frontend:
+React, TypeScript, JavaScript (ES6+)
 
-## Contact
+Styling:
+SCSS, BEM, Responsive Design (mobile-first)
 
-- Email: maystrenko.p@gmail.com  
-- Telegram: https://t.me/Pavlo_Maistrenko  
-- LinkedIn: https://www.linkedin.com/in/pavlomaistrenko/  
-- GitHub: https://github.com/PaulMaistrenko  
+API & Data:
+REST API, Axios, Fetch
 
----
+Tools & Workflow:
+Git, GitHub, Figma
 
-## Notes
+💡 What I Bring
+Clean and maintainable code
+Strong understanding of responsive design
+Experience with real-world UI and API integration
+Focus on performance and usability
+Ability to quickly learn and adapt
+📬 Contact
 
-- All projects are fully responsive (desktop, tablet, mobile)  
-- Focus on clean architecture, reusable components, and maintainable code  
+📧 Email: maystrenko.p@gmail.com
+💬 Telegram: https://t.me/Pavlo_Maistrenko
+💼 LinkedIn: https://www.linkedin.com/in/pavlomaistrenko/
+💻 GitHub: https://github.com/PaulMaistrenko
+
+⚡ Availability
+
+Open to:
+
+Freelance projects
+Junior Frontend Developer positions
+
+Ready to contribute to real-world products and grow as a developer.
