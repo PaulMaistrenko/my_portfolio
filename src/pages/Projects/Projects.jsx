@@ -10,6 +10,7 @@ import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { ProjectsPageItem } from '../../components/ProjectsPageItem/ProjectsPageItem';
 
 import { projectsData } from '../../data/projectsData';
+import { DownloadCvButton } from '../../components/UI/DownloadCvButton/DownloadCvButton';
 
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
@@ -30,7 +31,10 @@ export const Projects = () => {
     >
       <section id="projects" className="page projects">
         <div className="container">
-          <BackLink />
+          <div className="page-top__wrapper">
+            <BackLink />
+            <DownloadCvButton />
+          </div>
           <h1 className="page__title text-secondary">
             {t('projects').charAt(0).toUpperCase() + t('projects').slice(1)}
           </h1>

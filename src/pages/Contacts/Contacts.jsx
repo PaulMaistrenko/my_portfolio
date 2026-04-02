@@ -7,6 +7,7 @@ import { useMainContext } from '../../context/MainContext';
 
 import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
+import { DownloadCvButton } from '../../components/UI/DownloadCvButton/DownloadCvButton';
 
 const FORM_ENDPOINT = 'https://formspree.io/f/xjgalpzl';
 
@@ -93,7 +94,10 @@ export const Contacts = () => {
     >
       <section id="contacts" className="page contacts">
         <div className="container">
-          <BackLink />
+          <div className="page-top__wrapper">
+            <BackLink />
+            <DownloadCvButton />
+          </div>
 
           <h1 className="page__title text-secondary">
             {t('contacts').charAt(0).toUpperCase() + t('contacts').slice(1)}

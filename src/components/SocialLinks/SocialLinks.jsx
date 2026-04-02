@@ -13,7 +13,7 @@ export const SocialLinks = () => {
         </li>
         <li className="social__nav-item">
           <Link
-            to="https://github.com/PaulMaistrenko"
+            to="https://github.com/orgs/my-works-showcase/repositories"
             className="social__nav-link git-hub"
             target="_blank"
           />

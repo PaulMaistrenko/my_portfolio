@@ -1,6 +1,9 @@
 .contacts {
   position: relative;
-  margin-bottom: 70px;
+
+  @include onTablet {
+    margin-bottom: 70px;
+  }
 }
 
 .contacts-page__description {

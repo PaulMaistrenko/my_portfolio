@@ -12,6 +12,7 @@ export const DownloadCvButton = () => {
         href="/files/CV-Frontend-Pavlo-Maistrenko.pdf"
         download="CV-Frontend-Pavlo-Maistrenko.pdf"
         className="cv-download-link"
+        aria-label="Download CV"
       ></a>
     </div>
   );
