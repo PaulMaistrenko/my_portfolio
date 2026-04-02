@@ -101,7 +101,7 @@ Ability to quickly learn and adapt
 📧 Email: maystrenko.p@gmail.com
 💬 Telegram: https://t.me/Pavlo_Maistrenko
 💼 LinkedIn: https://www.linkedin.com/in/pavlomaistrenko/
-💻 GitHub: https://github.com/PaulMaistrenko
+💻 GitHub: https://github.com/orgs/my-works-showcase/repositories
 
 ⚡ Availability
 
